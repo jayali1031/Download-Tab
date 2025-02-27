@@ -1,0 +1,90 @@
+{% if i == 1 %}
+
+      {% if product.metafields.customAttributes.item-details != blank or product.metafields.customAttributes.item-details != blank or product.metafields.customAttributes.items-per-carton != blank or product.metafields.customAttributes.carton-size != blank or product.metafields.customAttributes.total-carton-weight != blank or product.metafields.customAttributes.item-volume != blank or product.metafields.customAttributes.item-packaging != blank or product.metafields.customAttributes.item-width != blank or product.metafields.customAttributes.item-height != blank or product.metafields.customAttributes.top-rack-dishwasher-safe != blank or product.metafields.customAttributes.item-pms-color != blank or product.metafields.customAttributes.item-guesset != blank or product.metafields.customAttributes.item-guesset != blank or product.metafields.customAttributes.item-handle != blank or product.metafields.customAttributes.item-material != blank or product.metafields.customAttributes.item-batteries != blank or product.metafields.customAttributes.item-mah != blank or product.metafields.customAttributes.item-patent != blank or product.metafields.customAttributes.item-bottom-diameter != blank %}
+ 
+  {% assign tab_active = true %}
+
+      {% elsif product.metafields.customAttributes.decorating-details != blank or product.metafields.customAttributes.decor-option != blank or product.metafields.customAttributes.locations-print-area != blank or product.metafields.customAttributes.setup-charge != blank or product.metafields.customAttributes.run-charge != blank or  product.metafields.customAttributes.additional-location-charge  %}
+
+        {% assign tab_active = false %}
+
+      {% elsif product.metafields.customAttributes.delivery-time != blank or product.metafields.customAttributes.inventory != blank or product.metafields.customAttributes.items-per-carton != blank or product.metafields.customAttributes.carton-size != blank or product.metafields.customAttributes.total-carton-weight != blank  %}
+
+        {% assign tab_active = false %}
+
+      {% elsif product.metafields.customAttributes.downloads != blank or product.metafields.customAttributes.personalize != blank  %}
+
+        {% assign tab_active = false %}
+
+      {% endif %}
+
+    {% elsif i == 2 %}
+
+         {% if product.metafields.customAttributes.item-details != blank or product.metafields.customAttributes.item-details != blank or product.metafields.customAttributes.items-per-carton != blank or product.metafields.customAttributes.carton-size != blank or product.metafields.customAttributes.total-carton-weight != blank or product.metafields.customAttributes.item-volume != blank or product.metafields.customAttributes.item-packaging != blank or product.metafields.customAttributes.item-width != blank or product.metafields.customAttributes.item-height != blank or product.metafields.customAttributes.top-rack-dishwasher-safe != blank or product.metafields.customAttributes.item-pms-color != blank or product.metafields.customAttributes.item-guesset != blank or product.metafields.customAttributes.item-guesset != blank or product.metafields.customAttributes.item-handle != blank or product.metafields.customAttributes.item-material != blank or product.metafields.customAttributes.item-batteries != blank or product.metafields.customAttributes.item-mah != blank or product.metafields.customAttributes.item-patent != blank %}
+  
+     {% assign tab_active = false %}
+
+      {% elsif product.metafields.customAttributes.decorating-details != blank or product.metafields.customAttributes.decor-option != blank or product.metafields.customAttributes.locations-print-area != blank or product.metafields.customAttributes.setup-charge != blank or product.metafields.customAttributes.run-charge != blank or  product.metafields.customAttributes.additional-location-charge  %}
+
+        {% assign tab_active = true %}
+
+      {% elsif product.metafields.customAttributes.delivery-time != blank or product.metafields.customAttributes.inventory != blank or product.metafields.customAttributes.items-per-carton != blank or product.metafields.customAttributes.carton-size != blank or product.metafields.customAttributes.total-carton-weight != blank  %}
+
+        {% assign tab_active = false %}
+
+      {% elsif product.metafields.customAttributes.downloads != blank or product.metafields.customAttributes.personalize != blank  %}
+
+        {% assign tab_active = false %}
+
+      {% endif %}
+
+    {% elsif i == 3 %} 
+
+          {% if product.metafields.customAttributes.item-details != blank or product.metafields.customAttributes.item-details != blank or product.metafields.customAttributes.items-per-carton != blank or product.metafields.customAttributes.carton-size != blank or product.metafields.customAttributes.total-carton-weight != blank or product.metafields.customAttributes.item-volume != blank or product.metafields.customAttributes.item-packaging != blank or product.metafields.customAttributes.item-width != blank or product.metafields.customAttributes.item-height != blank or product.metafields.customAttributes.top-rack-dishwasher-safe != blank or product.metafields.customAttributes.item-pms-color != blank or product.metafields.customAttributes.item-guesset != blank or product.metafields.customAttributes.item-guesset != blank or product.metafields.customAttributes.item-handle != blank or product.metafields.customAttributes.item-material != blank or product.metafields.customAttributes.item-batteries != blank or product.metafields.customAttributes.item-mah != blank or product.metafields.customAttributes.item-patent != blank %}
+ 
+     {% assign tab_active = false %}
+
+      {% elsif product.metafields.customAttributes.decorating-details != blank or product.metafields.customAttributes.decor-option != blank or product.metafields.customAttributes.locations-print-area != blank or product.metafields.customAttributes.setup-charge != blank or product.metafields.customAttributes.run-charge != blank or  product.metafields.customAttributes.additional-location-charge  %}
+
+        {% assign tab_active = false %}
+
+      {% elsif product.metafields.customAttributes.delivery-time != blank or product.metafields.customAttributes.inventory != blank or product.metafields.customAttributes.items-per-carton != blank or product.metafields.customAttributes.carton-size != blank or product.metafields.customAttributes.total-carton-weight != blank  %}
+
+        {% assign tab_active = true %}
+
+      {% elsif product.metafields.customAttributes.downloads != blank or product.metafields.customAttributes.personalize != blank  %}
+
+        {% assign tab_active = false %}
+
+      {% endif %}
+
+    {% elsif i == 4 %}
+
+              {% if product.metafields.customAttributes.item-details != blank or product.metafields.customAttributes.item-details != blank or product.metafields.customAttributes.items-per-carton != blank or product.metafields.customAttributes.carton-size != blank or product.metafields.customAttributes.total-carton-weight != blank or product.metafields.customAttributes.item-volume != blank or product.metafields.customAttributes.item-packaging != blank or product.metafields.customAttributes.item-width != blank or product.metafields.customAttributes.item-height != blank or product.metafields.customAttributes.top-rack-dishwasher-safe != blank or product.metafields.customAttributes.item-pms-color != blank or product.metafields.customAttributes.item-guesset != blank or product.metafields.customAttributes.item-guesset != blank or product.metafields.customAttributes.item-handle != blank or product.metafields.customAttributes.item-material != blank or product.metafields.customAttributes.item-batteries != blank or product.metafields.customAttributes.item-mah != blank or product.metafields.customAttributes.item-patent != blank %}
+   
+        {% assign tab_active = false %}
+
+        {% elsif product.metafields.customAttributes.decorating-details != blank or product.metafields.customAttributes.decor-option != blank or product.metafields.customAttributes.locations-print-area != blank or product.metafields.customAttributes.setup-charge != blank or product.metafields.customAttributes.run-charge != blank or  product.metafields.customAttributes.additional-location-charge  %}
+
+        {% assign tab_active = false %}
+
+        {% elsif product.metafields.customAttributes.delivery-time != blank or product.metafields.customAttributes.inventory != blank or product.metafields.customAttributes.items-per-carton != blank or product.metafields.customAttributes.carton-size != blank or product.metafields.customAttributes.total-carton-weight != blank  %}
+
+        {% assign tab_active = false %}
+
+        {% elsif product.metafields.customAttributes.downloads != blank or product.metafields.customAttributes.personalize != blank  %}
+
+        {% assign tab_active = true %}
+
+      {% endif %}
+    {% endif %}
+
+  {% if tab_active == true %} 
+      {%- assign active_tab = ' data-active="true"' -%}
+    {% else %} 
+      {%- assign active_tab = nul -%}
+    {% endif %}
+{% comment %}   
+<!--Active first tab-->
+{% endcomment%}
+ 
